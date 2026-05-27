@@ -1,0 +1,16 @@
+<internal_error>
+	<executable>quartus_sta.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_sta.exe (85859 megabytes used)</error>
+	<date>Sat May  9 00:57:34 2026</date>
+	<version>Version 25.1std.0 Build 1129 10/21/2025 SC Standard Edition</version>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_sta.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_sta.exe (87788 megabytes used)</error>
+	<date>Sun May 10 16:34:17 2026</date>
+	<version>Version 25.1std.0 Build 1129 10/21/2025 SC Standard Edition</version>
+</internal_error>
+

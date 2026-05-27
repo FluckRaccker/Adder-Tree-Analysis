@@ -1,0 +1,21 @@
+*.o
+*.vcd
+*.cf
+*.bak
+*.vo
+
+*.xml
+*dts
+*dtsbo
+*.csv
+*.xlsx
+
+**/db/
+**/incremental_db/
+**/output_files/
+
+# Relatórios grandes gerados pelos scripts
+**/io_paths.txt
+**/worst_path.txt
+
+**/simulation/questa/
