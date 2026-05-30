@@ -37,8 +37,8 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Stratix V"
-set_global_assignment -name DEVICE 5SEEBH40C2
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGXFC9E7F35C8
 set_global_assignment -name TOP_LEVEL_ENTITY generic_multiplier
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:25:57  MAY 10, 2026"
