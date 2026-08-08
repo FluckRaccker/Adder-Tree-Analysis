@@ -379,6 +379,44 @@ Os resultados podem ser utilizados em trabalhos acadêmicos relacionados a:
 
 ---
 
+## Parâmetros de Temporização
+
+| Parâmetro    | Significado                              | Descrição                                                                                                                                    |
+| ------------ | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Delay_CP`   | Delay do Caminho Crítico                 | Delay total do caminho crítico do circuito, correspondente ao caminho com maior atraso de propagação entre o nó de origem e o nó de destino. |
+| `IC_CP`      | Delay de Interconexão do Caminho Crítico | Parcela do delay do caminho crítico causada pelo roteamento e pelas interconexões entre as células lógicas.                                  |
+| `CELL_CP`    | Delay de Células do Caminho Crítico      | Parcela do delay do caminho crítico causada pelas células lógicas, como LUTs, registradores, buffers e outros recursos internos da FPGA.     |
+| `From_Node`  | Nó Inicial do Caminho Crítico            | Nó de origem do caminho crítico identificado durante a análise de temporização.                                                              |
+| `To_Node`    | Nó Final do Caminho Crítico              | Nó de destino do caminho crítico identificado durante a análise de temporização.                                                             |
+| `Delay_MAX`  | Delay Máximo                             | Maior delay total encontrado entre todos os caminhos analisados.                                                                             |
+| `IC_MAX`     | Delay Máximo de Interconexão             | Maior contribuição de delay causada pelas interconexões entre os caminhos analisados.                                                        |
+| `CELL_MAX`   | Delay Máximo de Células                  | Maior contribuição de delay causada pelas células lógicas entre os caminhos analisados.                                                      |
+| `Delay_MEAN` | Delay Médio                              | Média do delay total considerando todos os caminhos analisados.                                                                              |
+| `IC_MEAN`    | Delay Médio de Interconexão              | Média do delay causado pelo roteamento e pelas interconexões dos caminhos analisados.                                                        |
+| `CELL_MEAN`  | Delay Médio de Células                   | Média do delay causado pelas células lógicas dos caminhos analisados.                                                                        |
+
+### Componentes do Delay
+
+O delay total de um caminho pode ser dividido, de forma geral, em duas componentes principais:
+
+```text
+Delay ≈ CELL + IC
+```
+
+onde:
+
+* `CELL` representa o atraso introduzido pelas células lógicas, como LUTs, registradores e buffers;
+* `IC` representa o atraso introduzido pelo roteamento e pelas interconexões entre essas células.
+
+Para o caminho crítico:
+
+```text
+Delay_CP ≈ CELL_CP + IC_CP
+```
+
+Esses parâmetros permitem avaliar se a limitação de temporização do circuito está relacionada principalmente à **profundidade lógica** ou à **complexidade do roteamento e das interconexões**.
+
+
 ## Autor
 
 Desenvolvido por Rafael Ferreira.
