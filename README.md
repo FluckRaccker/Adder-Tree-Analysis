@@ -269,7 +269,7 @@ O fluxo típico é:
 ### Software
 
 - Python 3.10 ou superior.
-- Quartus Prime Standard ou Lite.
+- Quartus Prime Standard 25.1 
 - TimeQuest Timing Analyzer.
 - Jupyter Notebook ou JupyterLab.
 
@@ -333,22 +333,6 @@ Exemplo de caminho no Windows:
 ```python
 quartus_bin = r"C:\altera_lite\25.1std\quartus\bin64"
 ```
-
----
-
-## Organização sugerida dos resultados
-
-Para comparar as arquiteturas, recomenda-se armazenar os resultados em tabelas com colunas como:
-
-| Arquitetura | Número de vetores | Largura `n` | Maior RR | Maior RF | Maior FR | Maior FF | Caminho crítico |
-|------------|-------------------|-------------|----------|----------|----------|----------|-----------------|
-| Original | 16 | 16 | - | - | - | - | - |
-| Original diagonal | 16 | 16 | - | - | - | - | - |
-| Proposta | 16 | 16 | - | - | - | - | - |
-| Proposta diagonal | 16 | 16 | - | - | - | - | - |
-| Proposta truncada | 16 | 16 | - | - | - | - | - |
-
-Essa estrutura facilita a comparação em planilhas ou ferramentas de visualização.
 
 
 ---
